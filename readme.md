@@ -7,5 +7,5 @@
 
 - i dont handle the art :). this game is made by [two]()
 
-- blog is located in [devlogs](), game in [game](), art in
-  [art]()
+- blog is located in [devlogs](devlogs), game in [game](game), art in
+  [art](art)
