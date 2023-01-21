@@ -5,13 +5,16 @@ const images = await Astro.glob("../../../art/*.png");
 ---
 
 <Layout title="art">
-    {
-        images.map((v) => (
-            <Image
-                width={300}
-                aspectRatio={1}
-                src={`https://media.githubusercontent.com/media/chazzox/project-omikron/main${v.default.src}`}
-            />
-        ))
-    }
+    <div class="my-10 flex flex-col items-center gap-14">
+        {
+            images.map((v) => (
+                <Image
+                    height={300}
+                    aspectRatio={2}
+                    fit="contain"
+                    src={`https://media.githubusercontent.com/media/chazzox/project-omikron/main${v.default.src}`}
+                />
+            ))
+        }
+    </div>
 </Layout>
