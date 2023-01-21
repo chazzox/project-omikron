@@ -1,0 +1,17 @@
+---
+import { Image } from "@astrojs/image/components";
+import Layout from "../layouts/layout.astro";
+const images = await Astro.glob("../../../art/*.png");
+---
+
+<Layout title="art">
+    {
+        images.map((v) => (
+            <Image
+                width={300}
+                aspectRatio={1}
+                src={`https://media.githubusercontent.com/media/chazzox/project-omikron/main${v.default.src}`}
+            />
+        ))
+    }
+</Layout>
