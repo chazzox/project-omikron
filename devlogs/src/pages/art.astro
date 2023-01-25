@@ -1,18 +1,19 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/layout.astro";
-const images = await Astro.glob("../../../art/*.png");
+const Images = await Astro.glob("../assets/art/*.png");
 ---
 
 <Layout title="art">
     <div class="my-10 flex flex-col items-center gap-14">
         {
-            images.map((v) => (
+            Images.map((v, i) => (
                 <Image
-                    height={300}
+                    height={400}
                     aspectRatio={2}
                     fit="contain"
-                    src={`https://media.githubusercontent.com/media/chazzox/project-omikron/main${v.default.src}`}
+                    src={v.default.src}
+                    alt={`game asset ${i}`}
                 />
             ))
         }
