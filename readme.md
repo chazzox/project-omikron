@@ -1,4 +1,4 @@
-# PROJECT-OMIKRON
+# project-omikron
 
 - this is the title for in development game, title is currently unkown
 
