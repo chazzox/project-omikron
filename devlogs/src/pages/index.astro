@@ -1,5 +1,27 @@
 ---
 import Layout from "../layouts/layout.astro";
+
+const Blogs = await Astro.glob("./blog/*.md");
 ---
 
-<Layout title="project-omikron" />
+<Layout title="project-omikron">
+    <div class="mx-auto max-w-xl">
+        {
+            Blogs.map(({ frontmatter, url }) => (
+                <a
+                    class="my-10 flex h-24 items-center rounded-xl border-[1px] border-white p-3 underline"
+                    href={url}
+                >
+                    <div class="flex-1">
+                        <h4>{frontmatter.title}</h4>
+                        <p>{frontmatter.description}</p>
+                    </div>
+                    <div class="text-right">
+                        <p>{frontmatter.date}</p>
+                        <p>{frontmatter.author}</p>
+                    </div>
+                </a>
+            ))
+        }
+    </div>
+</Layout>
