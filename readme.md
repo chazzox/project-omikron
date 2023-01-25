@@ -1,7 +1,7 @@
 # project-omikron
 
 - this game is in unplayable form, this is my first attempt at anything game 
-  programming related. it will take literally ages
+  programming related. it will take ages
 
 - i dont handle the art :)
 
