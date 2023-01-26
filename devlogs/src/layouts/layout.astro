@@ -16,7 +16,24 @@ const { title } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
-    </head>
+        <meta name="title" content={title} /></head
+    >4
+    <!-- og -->
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://project-omikron.chazzox.uk" />
+    <meta property="og:title" content="Project Omikron - The Devlogs" />
+    <meta
+        property="og:description"
+        content="Attempting to write a blog and a game at the same time :)"
+    />
+
+    <!-- twitter -->
+    <meta property="twitter:title" content="Project Omikron - The Devlogs" />
+    <meta
+        property="twitter:description"
+        content="Attempting to write a blog and a game at the same time :)"
+    />
+
     <body class="flex min-h-screen flex-col bg-black text-white">
         <Navbar />
         <main class="flex-1">
