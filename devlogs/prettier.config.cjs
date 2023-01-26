@@ -6,6 +6,7 @@ module.exports = {
     tabWidth: 4,
     singleQuote: false,
     trailingComma: "none",
+    proseWrap:"always",
     printWidth: 85,
     plugins: [
         require("prettier-plugin-svelte"),

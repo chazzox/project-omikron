@@ -1,19 +1,19 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/layout.astro";
-const Images = await Astro.glob("../assets/art/*.png");
+const Images = await Astro.glob("/public/art/*.png");
 ---
 
 <Layout title="art">
     <div class="my-10 flex flex-col items-center gap-14">
         {
-            Images.map((v, i) => (
+            Images.map((_, i) => (
                 <Image
                     height={400}
                     aspectRatio={2}
                     fit="contain"
-                    src={v.default.src}
-                    alt={`game asset ${i}`}
+                    src={`art/${i + 1}.png`}
+                    alt={`game asset ${i + 1}`}
                 />
             ))
         }
