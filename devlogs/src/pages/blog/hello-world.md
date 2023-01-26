@@ -3,7 +3,7 @@ layout: ../../layouts/blog-post.astro
 title: How to make a game
 description: I do not know what I am doing
 # yyyy-mm-dd
-date: 2023-01-24
+date: 2023-01-26
 author_text: Charlie
 author_social: https://twitter.com/_chazzox_
 ---
