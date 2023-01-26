@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/blog-post.astro
-title: How do I make a game? - Draft
+title: How do I make a game?
 description: I do not know what I am doing
 # yyyy-mm-dd
 date: 2023-01-24
@@ -62,7 +62,11 @@ order to rerender the square, you must first wipe the screen, then draw the new
 square with its fancy new coordinates
 
 ```c
-image.png
+void draw(SDL_Surface *s, SDL_Rect *r)
+{
+    SDL_FillRect(s, NULL, 0x000000);
+    SDL_FillRect(s, r, SDL_MapRGB(s->format, 0xFF, 0x00, 0xFF));
+}
 ```
 
 Success! A window!
