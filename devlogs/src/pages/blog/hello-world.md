@@ -10,24 +10,26 @@ author_social: https://twitter.com/_chazzox_
 
 # I do not know what I am doing
 
-I have no idea what I am doing. I have no idea how to make a game. I have no idea how
-to make a game engine. This is both my first attempt at writing as well as my first
-stab at making a game. And by game I don't just mean some small little scratch game
-you make with your mates in the middle of a school day. Im talking about a fully
-fudged, thought out, serious, big boy game. The type of game that makes you _want_ to
-play again. The type of game that makes you _want_ to show your friends.
+I have no idea what I am doing. I have no idea how to make a game let alone a game
+engine. This is both my first attempt at writing as well as my first stab at making
+any form of game development. And by game I don't just mean some small little scratch
+game you make with your mates in the middle of a school day. Im talking about a fully
+fudged, thought out, serious, big boy game. The typa game that you actually want to
+keep playing.
 
-The plan is to keep these things short, not too much of me trying to ramble on about
-the 'technical' aspect of the game. More of a progress report. Think of it like a
+The plan is to keep these things short, not too much of me rambling on about the
+'technical' aspect of the game. More of a progress report. Think of it like a
 [scrum meeting](https://www.productplan.com/glossary/scrum-meeting/), except I'm the
 only one here.
 
 ## What I've done so far
 
 First step was to figure out how. Because I enjoy pain and suffering. The obvious
-choice was to write the whole thing in ANSI C, along with the help of SDL2. A library
-that allows you to create windows, render graphics, and play sounds without the
-annoyance of dealing with platform specific APIs.
+choice was to write the whole thing in
+[ANSI C](https://en.wikipedia.org/wiki/ANSI_C), along with the help of
+[SDL2](https://wiki.libsdl.org/SDL2/FrontPage). A library that allows you to create
+windows, render graphics, and play sounds without the annoyance of dealing with
+platform specific APIs.
 
 <!-- maybe a sdl2 explanation diagram -->
 
@@ -81,11 +83,11 @@ purple square
 After 4 hours of staring at the screen I realized a static square doesn't make for a
 very captivating game. Not [stimulating](https://www.youtube.com/watch?v=d53KEMoH90o)
 enough. My first thought for how to change the position of the square was to simply
-change the value of the dim pointers. Funnily enough this didn't work. It turns out
-in order to redraw something in sdl you need to wipe the screen and to a complete
-repaint. Obviously in a fully fledged game there would be optimizations for this. But
-for now it'll do. Oh, I also hooked up the SDL keyboard events to move the square as
-well.
+change the value of the `SDL_Rect` pointers. Funnily enough this didn't work. It
+turns out in order to redraw something in sdl you need to wipe the screen and draw a
+large square spanning the entire window in a single color to complete a repaint.
+Obviously in a fully fledged game there would be optimizations for this. But for now
+it'll do. Oh, I also hooked up the SDL keyboard events to move the square as well.
 
 With all that considered this is what we get
 
