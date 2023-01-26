@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/blog-post.astro
-title: How to make a game?
+title: How to make a game
 description: I do not know what I am doing
 # yyyy-mm-dd
 date: 2023-01-24
