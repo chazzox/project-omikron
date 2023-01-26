@@ -30,7 +30,7 @@ const Blogs = await Astro.glob("./blog/*.md");
                         <p>
                             {!!frontmatter.date
                                 ? new Date(frontmatter.date)
-                                      .toLocaleDateString()
+                                      .toLocaleDateString("en-GB")
                                       .replaceAll("/", "-")
                                 : "Coming soon..."}
                         </p>
