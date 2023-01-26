@@ -1,10 +1,10 @@
-![[]](./devlogs/src/assets/art/1.png)
+![[]](./devlogs/public/art/1.png)
 #
-![[]](./devlogs/src/assets/art/2.png)
+![[]](./devlogs/public/art/2.png)
 #
-![[]](./devlogs/src/assets/art/3.png)
+![[]](./devlogs/public/art/3.png)
 #
-![[]](./devlogs/src/assets/art/4.png)
+![[]](./devlogs/public/art/4.png)
 #
-![[]](./devlogs/src/assets/art/5.png)
+![[]](./devlogs/public/art/5.png)
 #
