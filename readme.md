@@ -6,4 +6,4 @@
 - i dont handle the art :)
 
 - blog is located in [devlogs](devlogs), game in [game](game), art in
-  [art](art.md)
+  [art](https://project-omikron.chazzox.uk/art/)
