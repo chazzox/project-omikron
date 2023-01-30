@@ -8,20 +8,18 @@ author_text: Charlie
 author_social: https://twitter.com/_chazzox_
 ---
 
-<!--
 # A brief look into the technology behind this site
 
 ## Web Development
 
 This is the part where I attempt to condense down the entire javascript ecosystem
-into a small paragraph (help me).
+into a small paragraph.
 
+## Astro - What is a meta framework?
 
-Basicallyyyyyyy
+## Svelte - What is a virtual dom framework?
 
-## Astro
-
-## Markdown
+## Markdown - What is a markdown language?
 
 ## All together now
 
@@ -29,8 +27,4 @@ Basicallyyyyyyy
 
 ## Why this is based
 
-byeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
-
-# _Coming Soon_
-
-[_Go Home_](/)
+byeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
