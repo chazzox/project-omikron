@@ -6,20 +6,51 @@ description: A brief look into the technology behind this site
 date:
 author_text: Charlie
 author_social: https://twitter.com/_chazzox_
+hidden: false
 ---
 
 # A brief look into the technology behind this site
 
-## Web Development
+Much of this is oversimplified, don't expect a full explanation of everything. I
+can't be bothered :)
 
-This is the part where I attempt to condense down the entire javascript ecosystem
-into a small paragraph.
+## Markdown - What is a markdown language?
 
-## Astro - What is a meta framework?
+Imagine a normal word document, you have headers, hyperlinks, bold and italic text,
+images and embedded sections of code. But in order to do all of this you need to use
+the GUI and when you open a `.docx` file it looks like a mess.
+
+```
+docx file encoding
+```
+
+Markdown is kinda like a word document file, but instead of using the specialized
+software, you can write all of the previously mentioned features in a 'code'
+
+```md
+# This is a header
+
+## This is a sub header
+
+### This is a sub sub header
+
+[This is a link](http://example.com/)
+![This is an image](https://picsum.photos/400/300)
+
+bullet points...
+
+-   **Bold text**
+-   _Italic text_
+```
+
+As you can see, its pretty self explanatory. Because of its ease and simplicity, we
+use markdown to write all of our blog posts.
 
 ## Svelte - What is a virtual dom framework?
 
-## Markdown - What is a markdown language?
+## Astro - What is a meta framework?
+
+Markdown languages,
 
 ## All together now
 
@@ -28,3 +59,27 @@ into a small paragraph.
 ## Why this is based
 
 byeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+## KaTeX
+
+You can render LaTeX mathematical expressions using
+[KaTeX](https://khan.github.io/KaTeX/):
+
+The _Gamma function_ satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via
+the Euler integral
+
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
+```mermaid
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```

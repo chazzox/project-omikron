@@ -3,8 +3,8 @@ import vercel from "@astrojs/vercel/static";
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
+import remarkMermaid from "astro-diagram/remark-mermaid";
 
-// https://astro.build/config
 export default defineConfig({
     output: "static",
     adapter: vercel(),
@@ -14,5 +14,16 @@ export default defineConfig({
         }),
         svelte(),
         tailwind()
-    ]
+    ],
+    markdown: {
+        remarkPlugins: [remarkMermaid, "remark-math"],
+        rehypePlugins: [
+            [
+                "rehype-katex",
+                {
+                    // Katex plugin options
+                }
+            ]
+        ]
+    }
 });
