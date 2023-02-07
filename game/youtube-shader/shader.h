@@ -1,10 +1,10 @@
-int glCreateShader(int type);
-void glShaderSource(int shader, int count, char **string, int *length);
-void glCompilerShader(int shader);
-void glAttachShader(int program, int shader);
-int glCreateProgram(void);
-void glLinkProgram(int program);
-void glUseProgram(int program);
+// int glCreateShader(int type);
+// void glShaderSource(int shader, int count, char **string, int *length);
+// void glCompilerShader(int shader);
+// void glAttachShader(int program, int shader);
+// int glCreateProgram(void);
+// void glLinkProgram(int program);
+// void glUseProgram(int program);
 
 char *shader_fragment[] = {
     "uniform float time;"
