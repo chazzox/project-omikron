@@ -6,9 +6,9 @@
 #define H 900
 #define GL_SILENCE_DEPRECATION
 
-// void glUniformLocation(int program, const char *name);
-// void glUniform1f(int location, float vO);
-// void glUniform2f(int location, float vO, float v1);
+void glUniformLocation(int program, const char *name);
+void glUniform1f(int location, float vO);
+void glUniform2f(int location, float vO, float v1);
 
 int main(int argc, char *argv[])
 {
