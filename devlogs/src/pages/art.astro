@@ -5,6 +5,18 @@ const Images = await Astro.glob("/public/art/*.png");
 ---
 
 <Layout title="art">
+    <head>
+        {
+            Images.map((v, i) => (
+                <link
+                    rel="preload"
+                    as="image"
+                    href={v.default.src}
+                    alt={`game asset ${i + 1}`}
+                />
+            ))
+        }</head
+    >
     <div class="my-10 flex flex-col items-center gap-14">
         {
             Images.map((v, i) => (
