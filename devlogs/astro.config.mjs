@@ -5,6 +5,9 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+import prefetch from "@astrojs/prefetch";
+
+// https://astro.build/config
 export default defineConfig({
     output: "static",
     adapter: vercel(),
@@ -13,6 +16,7 @@ export default defineConfig({
             serviceEntryPoint: "@astrojs/image/sharp"
         }),
         svelte(),
-        tailwind()
+        tailwind(),
+        prefetch()
     ]
 });
