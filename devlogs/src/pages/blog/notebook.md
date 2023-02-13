@@ -44,7 +44,8 @@ References:
 -   [Trench Crusade](https://www.kickstarter.com/projects/brassmonkeygames/trench-crusade-communicant-anti-tank-hunter)
 -   [Mike Franchina](https://www.artstation.com/sirfrancisdrake)
 -   [Saint Decent](https://www.myminifactory.com/users/SaintDecent)
--   [Maison Trencavel](https://maison-trencavel.com/) [28 Mag](https://28-mag.com/)
+-   [Maison Trencavel](https://maison-trencavel.com/)
+-   [28 Mag](https://28-mag.com/)
 
 In terms of history the middle ages isn't particularly my wheel house (except for the
 Wars of the Roses and Tudor rebellions I studied in A-level history) but I think its
