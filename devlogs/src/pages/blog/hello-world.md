@@ -73,12 +73,12 @@ void draw(SDL_Surface *s, SDL_Rect *r)
 
 Success! A window!
 
-![window](/blog/window.png)
+![window](/blog-assets/window.png)
 
 I thought the best next step would be to create a rectangle and draw it, behold the
 purple square
 
-![purple-square](/blog/square.png)
+![purple-square](/blog-assets/square.png)
 
 After 4 hours of staring at the screen I realized a static square doesn't make for a
 very captivating game. Not [stimulating](https://www.youtube.com/watch?v=d53KEMoH90o)
@@ -91,7 +91,7 @@ it'll do. Oh, I also hooked up the SDL keyboard events to move the square as wel
 
 With all that considered this is what we get
 
-![purple-square](/blog/output.gif)
+![purple-square](/blog-assets/output.gif)
 
 ### Issues
 

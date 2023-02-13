@@ -1,21 +1,10 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/layout.astro";
-const Images = await Astro.glob("/public/art/*.png");
+import path from "path";
+const Images = await Astro.glob("/public/art-assets/*.png");
 ---
 
-<head>
-    {
-        Images.map((v, i) => (
-            <link
-                rel="preload"
-                as="image"
-                href={v.default.src}
-                alt={`game asset ${i + 1}`}
-            />
-        ))
-    }
-</head>
 <Layout title="art">
     <div class="my-10 flex flex-col items-center gap-14">
         {
@@ -24,7 +13,7 @@ const Images = await Astro.glob("/public/art/*.png");
                     height={400}
                     aspectRatio={2}
                     fit="contain"
-                    src={v.default.src}
+                    src={path.relative("/public", v.default.src)}
                     alt={`game asset ${i + 1}`}
                     loading="eager"
                 />

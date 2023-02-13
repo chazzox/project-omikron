@@ -4,10 +4,9 @@ import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 
-// https://astro.build/config
 import prefetch from "@astrojs/prefetch";
+import mdx from "@astrojs/mdx";
 
-// https://astro.build/config
 export default defineConfig({
     output: "static",
     adapter: vercel(),
@@ -17,6 +16,7 @@ export default defineConfig({
         }),
         svelte(),
         tailwind(),
-        prefetch()
+        prefetch(),
+        mdx()
     ]
 });

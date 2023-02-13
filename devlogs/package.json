@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@astrojs/image": "^0.12.1",
+        "@astrojs/mdx": "^0.16.0",
         "@astrojs/prefetch": "^0.1.2",
         "@astrojs/svelte": "^1.0.2",
         "@astrojs/tailwind": "^2.1.3",

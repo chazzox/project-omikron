@@ -2,12 +2,14 @@
 import Layout from "../layouts/layout.astro";
 
 const Blogs = await Astro.glob("./blog/*.md");
+const BlogsMdx = await Astro.glob("./blog/*.mdx");
 ---
 
 <Layout title="project-omikron">
     <div class="mx-auto max-w-xl px-10 sm:px-0">
         {
-            Blogs.filter((c) => !c.frontmatter.hidden)
+            Blogs.concat(BlogsMdx)
+                .filter((c) => !c.frontmatter.hidden)
                 .sort(
                     (p, c) =>
                         new Date(
