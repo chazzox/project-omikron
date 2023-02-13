@@ -35,7 +35,7 @@ community making amazing games and models. Just to name a few Trunip28, Gardens 
 Hecate, Trench Crusade (with Mike Franchina's amazing art) , Saint Decent, Maison
 Trencavel, and basically 80% of the stuff in 28 Mag (links below).
 
-![art inspo](/blog/ArtInspoImages.png)
+![art inspo](/blog/ruairi-inspo-1.webp)
 
 References:
 
@@ -54,7 +54,7 @@ bikinis, more pig faced bascinets and mail coifs. I find that a lot of real medi
 designs are far more bizarre, fantastical and visually striking than the vast
 majority of.
 
-![art inspo](/blog/HistInspoImages2.png)
+![art inspo](/blog/ruairi-inspo-2.webp)
 
 So enough talking about other peoples stuff. What do I want to do? Well right now my
 elevator pitch is grimdark, medieval, demon induced post apocalypse. For the period
