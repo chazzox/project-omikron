@@ -1,7 +1,8 @@
 #include <SDL.h>
-#include <OpenGL/gl.h>
+#include <OpenGL/OpenGL.h>
 
 #include "shader.h"
+
 #define W 1600
 #define H 900
 #define GL_SILENCE_DEPRECATION
