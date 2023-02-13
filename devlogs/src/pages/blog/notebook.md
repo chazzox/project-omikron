@@ -54,7 +54,7 @@ bikinis, more pig faced bascinets and mail coifs. I find that a lot of real medi
 designs are far more bizarre, fantastical and visually striking than the vast
 majority of.
 
-![art inspo](/blog/ruairi-inspo-2.webp)
+![art inspo2](/blog/ruairi-inspo-2.webp)
 
 So enough talking about other peoples stuff. What do I want to do? Well right now my
 elevator pitch is grimdark, medieval, demon induced post apocalypse. For the period
