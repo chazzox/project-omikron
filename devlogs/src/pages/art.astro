@@ -13,7 +13,7 @@ const Images = await Astro.glob("/public/art-assets/*.png");
                     height={400}
                     aspectRatio={2}
                     fit="contain"
-                    src={path.relative("/public", v.default.src)}
+                    src={path.relative("../public", v.default.src)}
                     alt={`game asset ${i + 1}`}
                     loading="eager"
                 />
