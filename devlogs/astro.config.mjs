@@ -4,6 +4,7 @@ import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import remarkMermaid from "astro-diagram/remark-mermaid";
+import prefetch from "@astrojs/prefetch";
 
 export default defineConfig({
     output: "static",
@@ -13,6 +14,7 @@ export default defineConfig({
             serviceEntryPoint: "@astrojs/image/sharp"
         }),
         svelte(),
+        prefetch(),
         tailwind()
     ],
     markdown: {

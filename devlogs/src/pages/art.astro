@@ -4,6 +4,18 @@ import Layout from "../layouts/layout.astro";
 const Images = await Astro.glob("/public/art/*.png");
 ---
 
+<head>
+    {
+        Images.map((v, i) => (
+            <link
+                rel="preload"
+                as="image"
+                href={v.default.src}
+                alt={`game asset ${i + 1}`}
+            />
+        ))
+    }
+</head>
 <Layout title="art">
     <div class="my-10 flex flex-col items-center gap-14">
         {
@@ -14,6 +26,7 @@ const Images = await Astro.glob("/public/art/*.png");
                     fit="contain"
                     src={v.default.src}
                     alt={`game asset ${i + 1}`}
+                    loading="eager"
                 />
             ))
         }

@@ -19,6 +19,7 @@ const Blogs = await Astro.glob("./blog/*.md");
                 )
                 .map(({ frontmatter, url }) => (
                     <a
+                        rel="prefetch"
                         class="my-10 flex h-24 items-center rounded-xl border-[1px] border-white p-3 underline transition-shadow hover:shadow-2xl hover:shadow-indigo-500/40"
                         href={url}
                     >
