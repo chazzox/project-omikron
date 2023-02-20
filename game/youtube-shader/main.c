@@ -25,13 +25,13 @@ int test()
     window =
         SDL_CreateWindow("Shaders",
                          SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-                         W, H, 0 | SDL_WINDOW_OPENGL);
+                         W, H, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
 
     rend = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetRenderDrawColor(rend, 0, 0, 0, 255);
-    glViewport(0, 0, W, H);
 
-    // int p = glCreateProgram();
+    // throws an error
+    int p = glCreateProgram();
     // shader(shader_fragment, GL_FRAGMENT_SHADER, p);
     // glLinkProgram(p);
     // glUseProgram(p);
