@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import remarkMermaid from "astro-diagram/remark-mermaid";
 import prefetch from "@astrojs/prefetch";
+import mdx from "@astrojs/mdx";
 
 export default defineConfig({
     output: "static",
@@ -15,7 +16,8 @@ export default defineConfig({
         }),
         svelte(),
         prefetch(),
-        tailwind()
+        tailwind(),
+        mdx()
     ],
     markdown: {
         remarkPlugins: [remarkMermaid, "remark-math"],

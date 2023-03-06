@@ -11,8 +11,15 @@ endif(APPLE)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
+
+find_package(OpenGL REQUIRED)
+include_directories(${OpenGL_INCLUDE_DIRS})
+
+find_package(glfw3 REQUIRED)
+include_directories(${glfw3_INCLUDE_DIRS})
+
 set(GL_SILENCE_DEPRECATION)
 add_definitions(-Wdeprecated-declarations)
 
 add_executable(oioi main.c shader.h)
-target_link_libraries(oioi ${SDL2_LIBRARIES})
+target_link_libraries(oioi ${SDL2_LIBRARIES} ${OpenGL_INCLUDE_DIRS} ${glfw3_INCLUDE_DIRS} "-lglfw -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo")
