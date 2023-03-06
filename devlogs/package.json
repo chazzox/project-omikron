@@ -22,7 +22,6 @@
         "mermaid": "^9.3.0",
         "rehype-katex": "^6.0.2",
         "remark-math": "^5.1.1",
-        "sharp": "^0.31.3",
         "svelte": "^3.55.1"
     },
     "devDependencies": {

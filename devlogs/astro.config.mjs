@@ -10,15 +10,7 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
     output: "static",
     adapter: vercel(),
-    integrations: [
-        image({
-            serviceEntryPoint: "@astrojs/image"
-        }),
-        svelte(),
-        prefetch(),
-        tailwind(),
-        mdx()
-    ],
+    integrations: [image(), svelte(), prefetch(), tailwind(), mdx()],
     markdown: {
         remarkPlugins: [remarkMermaid, "remark-math"],
         rehypePlugins: [
