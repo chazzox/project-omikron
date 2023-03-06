@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components";
 import Layout from "../layouts/layout.astro";
 const Images = await Astro.glob("/public/art-assets/*.webp");
 ---
@@ -8,11 +7,9 @@ const Images = await Astro.glob("/public/art-assets/*.webp");
     <div class="my-10 flex flex-col items-center gap-14">
         {
             Images.map((v, i) => (
-                <Image
-                    height={400}
-                    aspectRatio={2}
-                    fit="contain"
-                    src={v.default.src}
+                <img
+                    class="h-[400px]"
+                    src={v.default}
                     alt={`game asset ${i + 1}`}
                     loading="eager"
                 />
