@@ -17,8 +17,9 @@ can't be bothered :)
 ## Markdown - What is a markup language?
 
 Imagine a normal word document, you have headers, hyperlinks, bold and italic text,
-images and embedded sections of code. But in order to do all of this you need to use
-the GUI and when you open a `.docx` file it looks like a mess.
+images and embedded sections of code. But in order to do all of this you need to use a
+dedicated application ([word]()). And if you open a `.docx` file in a program like [notepad]()
+it looks like a mess.
 
 ```docx
 K�����rgUKUV�����=����_rels/.rels��������������������MKA���C��l+�Hw{�7���Lvwh�L���DхR=�͛�����慥�;
@@ -56,21 +57,38 @@ bullet points...
 
 As you can see, its pretty self explanatory. Because of its ease and simplicity, we
 use markdown to write all of our blog posts. Markdown isnt the only markup language
-out there, others like latex, restructured text and asciidoc are also popular.
+out there, others like [latex](), [restructured text]() and [asciidoc]() are also popular.
 
 ## Svelte - What is a virtual dom library?
 
 Before we understand what Svelte is, its worth understanding a little bit about how
-websites are made these days. Before the days of react, vue, svelte and solidjs. Even
-before the era of jquery. Websites were made using a combination of pure html, css
-and some javascript. As the wants and needs of sites gre and expanded, so did the
-complexity of the underling tools. After years of _(holy shit this part could be
-long...)_
+websites are made these days. Before the days of [react](), [vue](), [svelte]() and [solidjs](). Even
+before the era of [jquery](). Websites were made using a combination of pure html, css
+and some javascript. As the wants and needs of sites grew and expanded, so did the
+complexity of the underling tools. After years of bickering over the best ways forward,
+and evolution ontop of evelution of the best ways to dynamically load content into the 
+
+### Further links
+
+If you really want to get a better idea about the world of javascript frontend. These documentaries by [honeypot]() are really good
+react = https://www.youtube.com/watch?v=8pDqJVdNa44
+vue = https://www.youtube.com/watch?v=OrxmtDw4pVI
 
 ## Astro - What is a meta framework?
 
-## All together now
+Astro is a frontend web framework that allows us to bundle multiple libaries/framework using one, consistent and easy to use system.
+The reason i chose astro is cause it allows us to generate a site which at build time contains 0 bytes of javascript, and does not need server side rendering (although this can still be implelemented if needed at a later date. Even though the code base contains svelte.
+I am to keep this site simple, a challenge i have set myself is to try and keep the javascript for a given site to 0bytes if i can.
 
-### _We all live in a yellow submarine_
+## Conclusion
+In short, the technology behind the site can be boiled down to.
+
+- pnpm
+- astro
+- svelte
+- tailwindcss
+- markdown/remark
+
 
 ## Thats it... cya next time :))))
+
