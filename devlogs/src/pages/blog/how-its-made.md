@@ -71,8 +71,12 @@ and evolution ontop of evelution of the best ways to dynamically load content in
 ### Further links
 
 If you really want to get a better idea about the world of javascript frontend. These documentaries by [honeypot]() are really good
-react = https://www.youtube.com/watch?v=8pDqJVdNa44
-vue = https://www.youtube.com/watch?v=OrxmtDw4pVI
+
+#### React doc
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8pDqJVdNa44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>/
+
+#### Vue doc
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OrxmtDw4pVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
 
 ## Astro - What is a meta framework?
 
