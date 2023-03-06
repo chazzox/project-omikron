@@ -4,3 +4,4 @@
   programming related. it will take ages
 
 - blog is located in [devlogs](devlogs), game in [game](game), art in <a target="_blank" href="https://project-omikron.chazzox.uk/art/">art</art>
+
