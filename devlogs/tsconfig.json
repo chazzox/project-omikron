@@ -1,6 +1,6 @@
 {
     "extends": "astro/tsconfigs/strict",
     "compilerOptions": {
-        "types": ["@astrojs/client"]
+        "types": ["astro/client"]
     }
 }
