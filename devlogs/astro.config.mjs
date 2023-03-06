@@ -12,7 +12,7 @@ export default defineConfig({
     adapter: vercel(),
     integrations: [
         image({
-            serviceEntryPoint: "@astrojs/image/sharp"
+            serviceEntryPoint: "@astrojs/image"
         }),
         svelte(),
         prefetch(),
