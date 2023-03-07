@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/layout.astro";
+import BlogPreview from "../components/blog-preview.astro";
 import { xor } from "../utils";
 const BlogsMdx = await Astro.glob("./blog/*.mdx");
 ---
@@ -7,11 +8,9 @@ const BlogsMdx = await Astro.glob("./blog/*.mdx");
 <Layout title="project-omikron">
     <div class="mx-auto max-w-xl px-10 sm:px-0">
         {
-            BlogsMdx.filter(
-                (c) =>
-                    typeof c.frontmatter.hidden == "undefined" &&
-                    !c.frontmatter.hidden
-            )
+            // filtering the blogs by pages hidden property (if it's not hidden)
+            BlogsMdx.filter((c) => !c?.frontmatter?.hidden)
+                // sorting the blogs by date
                 .sort(
                     (p, c) =>
                         new Date(
@@ -22,32 +21,7 @@ const BlogsMdx = await Astro.glob("./blog/*.mdx");
                         ).getTime()
                 )
                 .map(({ frontmatter, url }) => (
-                    <a
-                        rel="prefetch"
-                        class="my-10 flex h-24 items-center rounded-xl border-[1px] border-white p-3 underline transition-shadow hover:shadow-2xl hover:shadow-indigo-500/40"
-                        href={url}
-                    >
-                        <div class="flex-1">
-                            <h4>{frontmatter.title}</h4>
-                            <p class="text-white/80 decoration-white/80">
-                                {frontmatter.description}
-                            </p>
-                        </div>
-                        <div class="text-right text-white/60 underline decoration-white/60">
-                            <p>
-                                {!!frontmatter.date
-                                    ? new Date(frontmatter.date)
-                                          .toLocaleDateString("en-GB")
-                                          .replaceAll("/", "-")
-                                    : "Coming soon..."}
-                            </p>
-                            <object>
-                                <a href={frontmatter.author_social} target="_blank">
-                                    <p>{frontmatter.author_text}</p>
-                                </a>
-                            </object>
-                        </div>
-                    </a>
+                    <BlogPreview {...frontmatter} url={url} />
                 ))
         }
     </div>
