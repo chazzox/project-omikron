@@ -1,0 +1,82 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdp02ncr3i3am"]
+
+[ext_resource type="Texture2D" uid="uid://civj0u0tkisjy" path="res://src/assets/chazzox.jpeg" id="1_eajhe"]
+[ext_resource type="Script" path="res://src/credits_scene/credits_menu.gd" id="1_fl6ka"]
+[ext_resource type="Texture2D" uid="uid://c6e5pw25gh8mx" path="res://src/assets/ruairi.webp" id="2_cofdd"]
+
+[node name="credits_menu" type="Node2D"]
+script = ExtResource("1_fl6ka")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("1_eajhe")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]chazzox[/center]"
+fit_content = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("2_cofdd")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]ruanew[/center]"
+fit_content = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/CenterContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center]thanks for playing our game :)[/center]"
+fit_content = true
+
+[node name="back_button" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 2.08165e-12)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "back to main menu"
+
+[connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/VBoxContainer/back_button" to="." method="_on_back_button_pressed"]

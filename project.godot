@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="Gaming"
-run/main_scene="res://src/node_2d.tscn"
+run/main_scene="res://src/main_menu_scene/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="viewport"
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/mode=4
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="canvas_items"
