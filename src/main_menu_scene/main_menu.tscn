@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ryi1y05y3eps"]
 
 [ext_resource type="Script" path="res://src/main_menu_scene/main_menu.gd" id="1_ytaf0"]
-[ext_resource type="Texture2D" uid="uid://c4rkb786v0uqn" path="res://src/assets/shaq.jpg" id="2_de7jr"]
+[ext_resource type="Texture2D" uid="uid://105xsiebyygm" path="res://src/assets/intro-background.png" id="2_x4mo6"]
 [ext_resource type="Texture2D" uid="uid://dupu80g5rxiwb" path="res://src/assets/ai-prompt.svg" id="3_suqnk"]
 [ext_resource type="AudioStream" uid="uid://dynoixhyww2hr" path="res://src/assets/basic-intro.wav" id="4_gvn6d"]
 
@@ -21,7 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
-texture = ExtResource("2_de7jr")
+texture = ExtResource("2_x4mo6")
 expand_mode = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
@@ -36,7 +36,7 @@ layout_mode = 2
 theme_override_constants/separation = 20
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(200, 80)
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 2
 texture = ExtResource("3_suqnk")
 expand_mode = 2
@@ -56,13 +56,13 @@ theme_override_constants/separation = 8
 
 [node name="start_game" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer2/HBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 55
 keep_pressed_outside = true
 text = "play game"
 
 [node name="credits_button" type="Button" parent="CanvasLayer/CenterContainer/VBoxContainer2/HBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 10
+theme_override_font_sizes/font_size = 55
 text = "view credits"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

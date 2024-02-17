@@ -1,72 +1,57 @@
-[gd_scene format=3 uid="uid://crwfo7qkqh23l"]
+[gd_scene load_steps=2 format=3 uid="uid://crwfo7qkqh23l"]
+
+[ext_resource type="Texture2D" uid="uid://uvajrlkjnuvy" path="res://src/assets/wultur.jpeg" id="1_px3dn"]
 
 [node name="game_level" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 45.0
-offset_top = 25.0
-offset_right = 85.0
-offset_bottom = 65.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 104.0
-offset_top = 111.0
-offset_right = 144.0
-offset_bottom = 151.0
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_px3dn")
 
-[node name="TextureRect3" type="TextureRect" parent="."]
-offset_left = 232.0
-offset_top = 24.0
-offset_right = 272.0
-offset_bottom = 64.0
-
-[node name="TextureRect5" type="TextureRect" parent="."]
-offset_left = 127.0
-offset_top = 33.0
-offset_right = 167.0
-offset_bottom = 73.0
-
-[node name="TextureRect4" type="TextureRect" parent="."]
-offset_left = 226.0
-offset_top = 97.0
-offset_right = 266.0
-offset_bottom = 137.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 83.0
-offset_top = 21.0
-offset_right = 204.0
-offset_bottom = 53.0
-text = "video gaem :)"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+[node name="RichTextLabel2" type="RichTextLabel" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 180.0
-offset_top = 43.0
-offset_right = 303.0
-offset_bottom = 75.0
+offset_left = 222.636
+offset_top = -96.4606
+offset_right = 582.636
+offset_bottom = 21.5394
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.574213
 pivot_offset = Vector2(61, 15)
+theme_override_font_sizes/normal_font_size = 55
 text = "is very cool (:"
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+[node name="RichTextLabel3" type="RichTextLabel" parent="CanvasLayer"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 14.0
-offset_top = 69.0
-offset_right = 98.0
-offset_bottom = 101.0
+offset_left = -875.989
+offset_top = -353.803
+offset_right = -311.989
+offset_bottom = -170.803
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.575959
 pivot_offset = Vector2(61, 15)
+theme_override_font_sizes/normal_font_size = 55
 text = "i like a lot"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+offset_left = 751.0
+offset_top = 310.0
+offset_right = 1042.0
+offset_bottom = 491.0
+theme_override_font_sizes/normal_font_size = 55
+text = "video gaem :)"
