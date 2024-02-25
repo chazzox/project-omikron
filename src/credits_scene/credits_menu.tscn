@@ -23,6 +23,7 @@ theme_override_constants/separation = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/separation = 100
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer"]
@@ -32,7 +33,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 0
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(60, 60)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 texture = ExtResource("1_eajhe")
 expand_mode = 2
@@ -50,7 +51,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 0
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/CenterContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(60, 60)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 texture = ExtResource("2_cofdd")
 expand_mode = 2
@@ -69,6 +70,7 @@ theme_override_constants/separation = 10
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/CenterContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
 text = "[center]thanks for playing our game :)[/center]"
 fit_content = true
@@ -77,6 +79,7 @@ fit_content = true
 custom_minimum_size = Vector2(250, 2.08165e-12)
 layout_mode = 2
 size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
 text = "back to main menu"
 
 [connection signal="pressed" from="CanvasLayer/CenterContainer/VBoxContainer/VBoxContainer/back_button" to="." method="_on_back_button_pressed"]

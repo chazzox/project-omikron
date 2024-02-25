@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://bit8ntxora2vr"]
+
+[ext_resource type="Script" path="res://src/pause_menu/pause_menu.gd" id="1_fakom"]
+[ext_resource type="Shader" path="res://src/pause_menu/blur.gdshader" id="2_81tto"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_olyt5"]
+content_margin_left = 50.0
+content_margin_top = 15.0
+content_margin_right = 50.0
+content_margin_bottom = 15.0
+bg_color = Color(0.0196078, 0.0196078, 0.0196078, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+corner_detail = 5
+
+[sub_resource type="Theme" id="Theme_libl1"]
+default_font_size = 49
+Button/styles/normal = SubResource("StyleBoxFlat_olyt5")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_evlwj"]
+shader = ExtResource("2_81tto")
+shader_parameter/amount = 2.542
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_libl1")
+script = ExtResource("1_fakom")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_evlwj")
+layout_mode = 0
+offset_left = -105.0
+offset_top = -102.0
+offset_right = 2050.0
+offset_bottom = 1229.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -303.0
+offset_top = -233.5
+offset_right = 303.0
+offset_bottom = 233.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 25
+
+[node name="resume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="settings" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="main_menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Return to main menu"
+
+[node name="quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="hidden" from="." to="." method="_on_hidden"]
+[connection signal="ready" from="." to="." method="_ready"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
