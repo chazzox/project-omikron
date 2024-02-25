@@ -4,7 +4,6 @@ extends Node
 
 func _on_resume_pressed():
 	main.handlePause()
-	pass # Replace with function body.
 
 func _on_settings_pressed():
 	pass # Replace with function body.

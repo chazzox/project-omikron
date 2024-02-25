@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.2", "Forward Plus")
 
 [autoload]
 
+Utils="*res://src/utils/utils.gd"
 GlobalAudio="*res://src/global_audio/global_audio.tscn"
 
 [display]
